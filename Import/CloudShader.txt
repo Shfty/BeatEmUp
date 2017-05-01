@@ -1,0 +1,27 @@
+float Transmission = 0.0;
+float TotalOpacity = 0.0;
+float lod = 1.0;
+
+for(int i = 0; i < 500; i++)
+{
+	if(TotalOpacity > 1)
+	{
+		break;
+	}
+	 
+	float3 WorldPos = (CameraVector * 100 * lod * i - CameraPosition);
+	float3 ScaledPos = WorldPos * 0.0001;
+	float3 ScaledPos2 = WorldPos * 0.000001;
+	
+	float3 noise = 0.05 * sin(Time + SimplexNoise3D_TEX(ScaledPos));
+	float3 noise2 = 0.95 * SimplexNoise3D_TEX(ScaledPos2);
+	
+	float opac = clamp(clamp(noise + noise2, 0, 1) - clamp(-ScaledPos.z / 0.02, 0, 1), 0, 1);
+	float emission = clamp(1000 / distance(CameraPosition, WorldPos) * 0.3, 0, 1);
+	
+	Transmission += opac * emission * (1 - TotalOpacity);
+	TotalOpacity += opac;
+	lod = lod * 1.0155;
+}
+
+return sqrt(Transmission);

@@ -1,0 +1,25 @@
+{
+	"FileVersion" : 3,
+	"Version" : 1,
+	"VersionName" : "1.0",
+	"FriendlyName" : "OrthoHMD",
+	"Description" : "OrthoHMD is a workaround to modify projection matrices",
+	"Category" : "OrthoHMD",
+	"CreatedBy" : "Josh Palmer",
+	"CreatedByURL" : "",
+	"DocsURL" : "",
+	"MarketplaceURL" : "",
+	"SupportURL" : "",
+	"EnabledByDefault" : false,
+	"CanContainContent" : false,
+	"IsBetaVersion" : false,
+	"Installed" : false,
+	"Modules" :
+	[
+		{
+			"Name" : "OrthoHMD",
+			"Type" : "Runtime",
+			"LoadingPhase" : "Default"
+		}
+	]
+}

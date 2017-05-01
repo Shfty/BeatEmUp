@@ -1,0 +1,398 @@
+Fight Squad
+The Beat 'Em Up version of the A-Team
+
+4 members
+	Ezra
+	The Warrior
+		Female
+		Older
+			60s
+			'Grammy 76' vibe, think Bernie from Gears of War 3
+			Grey hair
+			Dreads
+		Chewing on a cocktail stick
+			Quit smoking a while back
+		Takes no shit
+			That one bit of Mugen giving the aggressive glance in the Samurai Champloo intro
+			Pipe to the face first, questions second
+		Elements of Garou-era Terry Bogard
+			Acts as a streetwise mentor to the post-mage
+		Shades
+			On forehead 99% of the time
+			Drop over eyes for comedic purposes when knocked over
+		Small gold ring earring in left ear
+		RE4 Bomber Jacket
+		Blue-grey Jeans
+		Wields a lead pipe like Guts wields a greatsword
+			Medium sized weapon with a shitload of brute force behind it
+			Takes up a loadout slot, always slotted
+			Stab it into the ground while you idle like a cool samurai
+			Home Run
+				Launch an enemy offscreen, have them fly around the planet and come back in from the other side
+			Round Trip
+				Needs way more impact than your standard round trip
+		Backdash 'hero landing slide' dodge
+		Forward lunge
+			Homing
+			'Get me up in their face right now' move
+			Aerial ninja gaiden wind path variant
+		Prefers a motorbike
+			Character-exclusive loadout item
+			"I don't care if you think it's impractical."
+			Fast
+				Very fast
+					Will wreck if crashed
+						Automatic backflip to safety
+						You won't crash if you're good though
+			Powerslide
+				Into handlebar grab smash-you-in-the-face-with-a-motorbike front flip
+			Scrape pipe along the ground just to look stylish
+		Backstory
+			Very weak Nv attunement
+				Can see flashes of it
+				Unable to coerce it
+				Used to be fully magic-attuned in her past life
+					Was a powerful battlemage
+						Wielded a greatsword
+							'Foehammer'
+								"Who would name a greatsword 'Foehammer'?"
+									"You don't need a keen edge when you have magic."
+						Wielded a silver revolver
+						50/50 Valkyrie/Gunslinger
+						Used to travel via ground-level flight magic instead of a motorcycle
+				Regains it toward the end of the Second Era
+					Emblazons wings and "Golden Age" on the back of her jacket
+					Calls it "the old fire"
+					Old magic being channeled through Nv
+						Different appearance, polygonal fire
+					Also gets a big-ass shotgun slug revolver to mark the return of her memories
+						"Justice (De Schaine Firearms)" engraved on barrel
+			Reincarnated soul from before god left the world
+				Stranded in limbo, was unable to pass on
+				God's return 'rebooted' all the stranded souls
+			No-shit personality is a side-effect of being unable to pass on
+				Not revealed in this game, food for thought
+					Hinted at in endgame dialogue & cutscene
+						"Old Warrior."
+							"So I've been around a long time. Doesn't make a difference."
+								"You've been around for far longer than you seem to think"
+									[Pipe to the face] "What did you just say to me?"
+										"A lifetime, one might say" [Dodge back, wipe blood from mouth, final boss begins]
+						Lights up a cigarette in the post-game after riding her bike out of the city to think on what's happened
+							Regaining scraps of memory from just under the surface
+								Character select magic attunement meter should occasionally glitch out to above max in the post-game
+				A restless soul
+				Not necessarily aware of it yet
+					Beats up god with the lead pipe at the end of the Third Age
+						"You left and stranded us all in limbo for centuries. I'm here to show you that there's no such thing as being above consequences."
+						Doesn't -kill- god, beats up
+							Subvert the trope
+							God needs to live for magic to remain, and for souls to pass on
+							Magic ends up being taken from god and disseminated throughout the world
+								Humanity can manage on its own
+								God can keep an eye on 'the outside' (the rest of the universe)
+							Doesn't pass on until her second death
+								Sticks it out until the end when given the choice
+								Feels the need to keep an eye on humanity after all she's seen
+									Ushering in a new age
+								"Me? I'm staying to face the consequences. I'll go when it happens naturally."
+									Dies of natural causes at a ripe old age in the Third Era
+										After a few years of using the lead pipe as a walking stick
+										Still pretty badass up til the end
+
+	Cherry
+	The Post-Mage
+		Female
+		Younger
+		Yellow hoodie
+		Red-Brown hair
+			Shoulder length
+			Dense and slightly curly
+			Pac man cherries hairpin
+		Grew up in Tenside
+		Not much for traditional fighting
+			Becomes more comfortable with it with Ezra's help
+			Packs a mean punch with a dodgeball though
+		A bit of a clumsy goof in the day-to-day, but can throw down with the best of them when needed
+		Wields a dodgeball
+			Crescent moon logo, oriented either up or down
+			Floats along behind the character
+			Grabbed and thrown for specials
+		Nv attuned
+			Melee projectile normals
+				Short recovery
+				Projectiles stay out NieR Automata-style
+			Super Dodgeball character
+				Button hold special attacks to throw the ball
+					Impact -> Rumble -> Thruster
+					Sky high
+					Fakeout reversal
+					Roundabound (lots of bouncing)
+					Throw a powered spinball then jump and grab on for a blanka ball
+				Sprint N steps and special for variants
+					Short windup before sprinting
+					Step step Ding step step step Ding
+						Flash feet during link frames
+							Keep the flash going if you jump
+								Signifies that air specials also work
+				Focus on move effects
+					Launchers
+					Blastback
+					Groundbounce
+
+	Rocko Stone
+	The Chief
+		Male
+		Black
+		Fight Squad's John "Hannibal" Smith
+		Rock City born and bred
+			"I'm practically its mascot, given the name and all."
+		Rustler
+			Beefy
+			Ex-wrestler turned streetfighter turned Fight Squad chief
+				Wresled under the name 'Stonefist'
+					It's STOOOONEFIST, yeeah
+						Little bit of macho man randy savage in there ooh yeah
+				Campy tragic wrestling backstory
+					Was the number one face, got buried
+						Strong sense of good guy justice pervades to this day
+				More serious streetfighting arc
+				Somewhat world-weary until it's time to kick ass
+					Then it's time to get pumped
+						Wrestling catchphrase?
+		Docker hat
+		Turtleneck
+		Combat pants
+		Beard
+		'The A-Team was too expensive and the B-Team got beat. Now it's our problem.'
+		All about the chain grapples
+			More grapples than normals
+			If a grapple move releases an enemy, there'll be a way to re-grapple
+			Enemies will try to escape
+				Can reliably prevent with a reaction command
+				Just-frame reaction command for counter punish
+			"If you don't have someone in a headlock you're doing it wrong"
+			Press grab while grabbing an enemy to grab another one with the other hand
+				Branch into new set of grapples
+					Bash heads together
+					Man Lariat
+		Momentum gauge
+			The longer you can chain grapple for, the higher the gauge
+			Special input to cash out for a reality-bending super
+			Empties if you let an enemy escape
+		Rustles so hard he can spin the world around him
+			Not Nv attuned, but reality is malleable following the return of magic and he's real strong
+			90 degree camera twist DDT into big boot wallbounce
+			Spinning piledriver
+				"Spinny on multiple levels"
+		Just-frame block to grab counter
+	
+	Arthur "Art" Westville
+	The Grappler
+		Male
+		Confident
+		Athletic build
+		Mid-length hair
+			Brown
+			Straight
+			A bit messy
+		Stubble chin
+		Weak Nv attunement
+			Can see it
+			Can snap his fingers and make sparks
+			Nothing much of practical use though
+		Knows the chief from his streetfighting days
+			Training partner
+			Used to moonlight as a thief
+				Chief hired him into Fight Squad to get him out of the crime life
+		Black leather gunslinger aesthetic
+			Will smith's getup from Wild Wild West
+			Off-white shirt
+			Black trenchcoat
+			Black stetson
+			Black moleskin jeans
+			Leather gloves
+			Circular black glasses w/shade lenses
+		Grappling hook
+			Handheld
+			Rotary design
+			Six hook barrels
+			Holstered at the hip
+			Fan the hammer
+				Shoot all six hooks
+				Yank up to six enemies in a bunch
+			Certain moves shoot it out, can extend/retract with inputs
+			Hook and swing
+			Combat and mobility
+			"Get over here"
+			"I'll come to you"
+		"The chief stole my last hat to hide his bald spot"
+
+Antagonist
+	Nv attuned
+		Reality warping powers
+			Ability to alter projection skew and camera rotation
+			Can cut portal holes in surfaces
+	Bushido blade styled final encounter?
+		Big damage from both player and enemy
+			3 hits to death
+		Highly defensive, need to find an opening
+			When you do, have it pay off big-time
+				Yakuza 5 heat mode mash-during-slowmo-hit-to-launch
+		Obvious wind-ups
+			Easy to block if you watch for them
+			Do not mash
+
+Setting - Rock City
+	Streets of Rage inspired
+	A city in a country on a planet named Gaia
+	Near future, 20XX-era
+		The cars don't fly, but they look more futuristic
+		Like a more westernized Akira
+	"It's a hard town. Heh."
+	Built on the ruins of The Dark Spire
+		Blue roses still native to the area, but not as prolific as in the First Age
+			
+Arcade-inspired gameplay
+	Fixed-parameter, no leveling or stat progression
+	Permanently unlock moves and equipment from shops (both in-level and menu)
+	Unique loadout items
+		Add special effects, moves or usables
+	
+New Hitman / Ground Zeroes level design
+	Sizable
+	Reusable - Mission based
+	Multiple entry and extraction points
+		Special character/item-specific ones
+	
+	The Warehouse
+		Locations
+			Boiler Room
+			Office
+			Warehouse space
+				Mezzanine
+			Shop floor
+			Roof
+			Garage
+		Missions
+			Introducing Ezra
+				First mission of the game
+				Ezra only
+				Unlocks Ezra
+				MGS2-style unseen protag intro w/dialogue
+				"Chief, the batter went in alone"
+					"Well shiet. [Radio] Batter, what the hell do you think you're doing?"
+						"Getting on with it. And I told you to stop calling me that, you think I use this thing for sport?"
+							"God damn, you know we're meant to use codenames out in the field."
+								[Camera transition to Ezra, face obscured in shadow, walking into the garage holding the pipe]
+									"And you know I was never the type."
+										[Goons enter scene from opposite end of garage]
+											"I know, I know. Don't go doing yourself an injury."
+												[Ezra continues walking, face reveal]
+													"Oh, I won't. And remember, it's Ezra."
+														[Ezra launches into heavy pipe attack, transition to player control roughly halfway in]
+	The Party
+		Two floor mansion
+		Dining room
+		Bedroom
+		Kitchen
+		Small attic space
+		Droppable chandeliers
+	Tenside
+	The Small Town
+		Ten-sided dice silhouette on "Welcome to Tenside" sign
+		Earthbound style town
+			Quaint
+			Quirky
+			UFOs buzzing past on occasion
+			Atmosphere of innocent good fun
+		Character development mission for Cherry
+			Cherry only
+			Unlocks Cherry
+	The Squared Circle
+		Wrestling ring
+		Smaller area from The Chief's past
+		Flashback?
+		Arena fight
+		Areas
+			The Ring
+			Backstage
+			Manager's Office
+			Dressing Room
+			Showers
+			Car Park
+		Missions
+			The Burying of Stonefist
+				Rocko only
+				Unlocks Rocko
+				WWE Parody
+					Jim Ross and Jerry Lawler announcer-alikes
+						JP and Jimmy "The Monarch" Lawless
+				Rocko's wrestling flashback origin
+					Royal Rumble
+						Very first ring-out goes through the spanish announcer table
+						Stonefist and rival survive
+							Boss fight
+							Rival is booked to win, stonefist has to sell
+								Mash button to sell
+									Mash while grounded / staggered / etc to stay staggered for longer
+								If you sell, storyline goes as planned and stonefist is buried
+									Leaves wrestling shortly after
+								If you don't sell, the General Manager comes down, spins it into a corruption storyline and fights you
+									Boss fight
+									"THE HELL DO YOU THINK YOU'RE DOING, STONEFIST? YOU WERE BOOKED TO LOSE"
+									Brings a steel chair with him
+										"Well JP, you sure know the GM is pissed when he's packing that kind of firepower."
+											"Bah gawd, Jerry!"
+												"It's Jimmy. And what's that you say? You think somebody's about to get fired?"
+													"Ah said Bah GAWD, Jerry!"
+									Manager scripted to win due to Rocko being weak after the rumble, fires him on the spot
+										"YOU'RE FIRED"
+	The Fortress
+		Every good game has a feudal japanese fortress
+		Sort of like the one from Power Stone 2
+		
+
+Set in the "Divine Reboot" metaverse
+	God left, has returned
+		Is shunned by parts of the now technologically-advanced society
+		Returned either out of remorse or being forced by an even higher power
+		Returns magic to the world as Nv ('nu', greek letter)
+			Blue, geometric appearance
+				Steven Universe / Platinum Star ish
+	Not a key plot point
+	Nv not necessarily explained in Fight Squad
+	Subtle background stuff
+		"God returns, is told to shove it (pope furious)" headline
+		Religious buildings with "under new management" signage
+		"The end isn't nigh / Nothing to see here" sandwich board character
+		"Godless town, godless world."
+
+Divine Reboot Timeline
+First Age
+	"The Golden Age"
+	Battlemage Ezra White of The Dark Spire
+		Dark Tower reference
+			Spiral tower in a field of blue roses
+				Source of the magic type that Ezra wields
+Second Age
+	(0 AD - 5XX AD)
+	"The Godless Age"
+Third Age
+	(0 AR - 68 AR)
+	0 AR - God's Return, souls in limbo are reincarnated
+	1 AR - Ezra's Rebirth
+	25 AR - Humanity first becomes aware that god has returned
+	27 AR - Widespread awareness of God's return
+	28 AR - Fight Squad Small Town Flashback
+	---
+	62 AR - Fight Squad
+	---
+	63 AR - Ezra fully regains her memory
+	64 AR - Ezra regains her magic, begins searching for god
+	66 AR - Ezra's Confrontation with God
+Fourth Age
+	"Ezra's Watch"
+	(65 AR - 101 AR)
+	101 AR - Ezra passes away
+Future

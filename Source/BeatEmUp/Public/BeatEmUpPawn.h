@@ -15,5 +15,5 @@ protected:
 	
 	UFUNCTION(BlueprintNativeEvent, Category = "BeatEmUp Pawn")
 	bool IsNetworkRelevantFor(const AActor* RealViewer, const AActor* ViewTarget, const FVector& SrcLocation) const;
-	bool IsNetworkRelevantFor_Implementation(const AActor* RealViewer, const AActor* ViewTarget, const FVector& SrcLocation) const;
+	virtual bool IsNetworkRelevantFor_Implementation(const AActor* RealViewer, const AActor* ViewTarget, const FVector& SrcLocation) const;
 };

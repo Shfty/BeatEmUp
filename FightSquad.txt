@@ -186,6 +186,7 @@ The Beat 'Em Up version of the A-Team
 			Spinning piledriver
 				"Spinny on multiple levels"
 		Just-frame block to grab counter
+		Wario land-style shoulder rush
 	
 	Arthur "Art" Westville
 	The Grappler

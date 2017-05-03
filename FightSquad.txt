@@ -53,11 +53,16 @@ The Beat 'Em Up version of the A-Team
 				Unable to coerce it
 				Used to be fully magic-attuned in her past life
 					Was a powerful battlemage
-						Wielded a greatsword
+						Wielded a blunt greatsword
 							'Foehammer'
 								"Who would name a greatsword 'Foehammer'?"
 									"You don't need a keen edge when you have magic."
 						Wielded a silver revolver
+							Augments it with magic
+								Various different types of attack
+									Rapid fire
+									Shotgun blast
+									Railgun
 						50/50 Valkyrie/Gunslinger
 						Used to travel via ground-level flight magic instead of a motorcycle
 				Regains it toward the end of the Second Era
@@ -71,16 +76,16 @@ The Beat 'Em Up version of the A-Team
 				Stranded in limbo, was unable to pass on
 				God's return 'rebooted' all the stranded souls
 			No-shit personality is a side-effect of being unable to pass on
-				Not revealed in this game, food for thought
-					Hinted at in endgame dialogue & cutscene
-						"Old Warrior."
-							"So I've been around a long time. Doesn't make a difference."
-								"You've been around for far longer than you seem to think"
-									[Pipe to the face] "What did you just say to me?"
-										"A lifetime, one might say" [Dodge back, wipe blood from mouth, final boss begins]
-						Lights up a cigarette in the post-game after riding her bike out of the city to think on what's happened
-							Regaining scraps of memory from just under the surface
-								Character select magic attunement meter should occasionally glitch out to above max in the post-game
+				Lives without fear
+				Hinted at in endgame dialogue & cutscene
+					"Old Warrior."
+						"So I've been around a long time. Doesn't make a difference."
+							"You've been around for far longer than you seem to think"
+								[Pipe to the face] "What did you just say to me?"
+									"A lifetime, one might say" [Dodge back, wipe blood from mouth, final boss begins]
+					Lights up a cigarette in the post-game after riding her bike out of the city to think on what's happened
+						Regaining scraps of memory from just under the surface
+							Character select magic attunement meter should occasionally glitch out to above max in the post-game
 				A restless soul
 				Not necessarily aware of it yet
 					Beats up god with the lead pipe at the end of the Third Age
@@ -118,6 +123,13 @@ The Beat 'Em Up version of the A-Team
 			Crescent moon logo, oriented either up or down
 			Floats along behind the character
 			Grabbed and thrown for specials
+		Super sentai suit as character-exclusive loadout item
+			Moveset modifier?
+				Not better, just different
+			The Red Ranger
+			Vigilante substory?
+				Don't want it to be big or serious
+				Tie in to training with Ezra?
 		Nv attuned
 			Melee projectile normals
 				Short recovery
@@ -227,6 +239,12 @@ The Beat 'Em Up version of the A-Team
 			Combat and mobility
 			"Get over here"
 			"I'll come to you"
+		RB Revolver
+			Rubber bullets
+			Character exclusive loadout item
+			Moveset modifier
+			Replace grappling hook with traditional projectiles
+				DMC gun juggles
 		"The chief stole my last hat to hide his bald spot"
 
 Antagonist
@@ -372,13 +390,15 @@ Set in the "Divine Reboot" metaverse
 Divine Reboot Timeline
 First Age
 	"The Golden Age"
-	Battlemage Ezra White of The Dark Spire
+	Battlemage Ezra of The Dark Spire
 		Dark Tower reference
 			Spiral tower in a field of blue roses
 				Source of the magic type that Ezra wields
 Second Age
 	(0 AD - 5XX AD)
 	"The Godless Age"
+	Potential for a more traditional fantasy setting
+		
 Third Age
 	(0 AR - 68 AR)
 	0 AR - God's Return, souls in limbo are reincarnated

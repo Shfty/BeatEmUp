@@ -42,6 +42,10 @@
 		{
 			"Name": "DLCTest",
 			"Enabled": true
+		},
+		{
+			"Name": "BeCK",
+			"Enabled": true
 		}
 	]
 }

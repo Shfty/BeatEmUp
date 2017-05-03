@@ -12,7 +12,7 @@
 #include "Engine/ActorChannel.h"
 #include "UnrealNetwork.h"
 
-#define DEBUG_PRINT 1
+#define DEBUG_PRINT 0
 
 UMovesetComponent::UMovesetComponent(const FObjectInitializer& ObjectInitializer)
 	: Super(ObjectInitializer)
@@ -21,20 +21,17 @@ UMovesetComponent::UMovesetComponent(const FObjectInitializer& ObjectInitializer
 	PrimaryComponentTick.bCanEverTick = true;
 	bReplicates = true;
 
-	FlipbookPlayer = ObjectInitializer.CreateDefaultSubobject<UPaperFlipbookPlayer>(this, TEXT("FlipbookPlayer"));
 }
 
 void UMovesetComponent::InitializeComponent()
 {
 	Super::InitializeComponent();
 
+	FlipbookPlayer = NewObject<UPaperFlipbookPlayer>(this, TEXT("FlipbookPlayer"));
 	FlipbookPlayer->OnPlaybackPositionChanged.BindUObject(this, &UMovesetComponent::HandlePlaybackPositionChanged);
 	FlipbookPlayer->OnSpriteChanged.BindUObject(this, &UMovesetComponent::HandleSpriteChanged);
 	FlipbookPlayer->OnFrameChanged.BindUObject(this, &UMovesetComponent::HandleFrameChanged);
 	FlipbookPlayer->OnPlaybackFinished.BindUObject(this, &UMovesetComponent::HandlePlaybackFinished);
-
-	// Fix for packaging error w/references to private subobject
-	FlipbookPlayer->SetFlags(EObjectFlags::RF_Public);
 }
 
 UMovesetNode_Move* UMovesetComponent::GetCurrentMove() const
@@ -49,7 +46,6 @@ UMovesetNode_Move* UMovesetComponent::GetCurrentMove() const
 
 void UMovesetComponent::SetCurrentMove(UMovesetNode_Move* NewMove, bool FireEvents, bool bForce)
 {
-	UE_LOG(LogTemp, Log, TEXT("SetCurrentMove: %s"), *NewMove->GetName());
 	if(CurrentMove != NewMove || bForce)
 	{
 		CurrentMove = NewMove;

@@ -29,7 +29,7 @@ void UPaperFlipbookPlayer::ReverseFromEnd()
 {
 	if(PaperFlipbook)
 	{
-		SetPlaybackPosition(PaperFlipbook->GetTotalDuration(), true);
+		SetPlaybackPosition(PaperFlipbook->GetTotalDuration(), /*bFireEvents=*/ false);
 		Reverse();
 	}
 }
@@ -42,7 +42,7 @@ void UPaperFlipbookPlayer::Reverse()
 
 void UPaperFlipbookPlayer::PlayFromStart()
 {
-	SetPlaybackPosition(0.0f, true);
+	SetPlaybackPosition(0.0f, /*bFireEvents=*/ false);
 	ReversePlayback = false;
 	Playing = true;
 }

@@ -4,6 +4,6 @@
 
 #include "EngineMinimal.h"
 
-class FBeatEmUpEditorModule : public IModuleInterface
+class FPunchEditorModule : public IModuleInterface
 {
 };

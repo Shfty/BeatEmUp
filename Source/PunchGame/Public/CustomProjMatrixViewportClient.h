@@ -9,7 +9,7 @@
  * 
  */
 UCLASS()
-class BEATEMUP_API UCustomProjMatrixViewportClient : public UGameViewportClient
+class PUNCHGAME_API UCustomProjMatrixViewportClient : public UGameViewportClient
 {
 	GENERATED_BODY()
 	

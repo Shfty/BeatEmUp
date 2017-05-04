@@ -4,19 +4,19 @@ using System.IO;
 
 using UnrealBuildTool;
 
-public class BeatEmUpEditor : ModuleRules
+public class PunchEditor : ModuleRules
 {
-    public BeatEmUpEditor(TargetInfo Target)
+    public PunchEditor(TargetInfo Target)
     {
         PublicIncludePaths.AddRange(
             new string[] {
-                "BeatEmUpEditor/Public"
+                "PunchEditor/Public"
             }
         );
 
         PrivateIncludePaths.AddRange(
             new string[] {
-                "BeatEmUpEditor/Private"
+                "PunchEditor/Private"
             }
         );
 
@@ -30,7 +30,7 @@ public class BeatEmUpEditor : ModuleRules
         PublicDependencyModuleNames.AddRange(
             new string[]
             {
-                "BeatEmUp",
+                "PunchGame",
                 "Core",
                 "Engine",
                 "CoreUObject",

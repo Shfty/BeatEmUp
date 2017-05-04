@@ -2,21 +2,21 @@
 
 using UnrealBuildTool;
 
-public class BeatEmUp : ModuleRules
+public class PunchGame : ModuleRules
 {
-	public BeatEmUp(TargetInfo Target)
+	public PunchGame(TargetInfo Target)
 	{
 		PublicIncludePaths.AddRange(
 			new string[] {
-                "BeatEmUp/Public",
-                "BeatEmUp/Public/AssetTypeActions"
+                "PunchGame/Public",
+                "PunchGame/Public/AssetTypeActions"
             }
 		);
 		
 		PrivateIncludePaths.AddRange(
 			new string[] {
-                "BeatEmUp/Private",
-                "BeatEmUp/Private/AssetTypeActions"
+                "PunchGame/Private",
+                "PunchGame/Private/AssetTypeActions"
             }
 		);
 		

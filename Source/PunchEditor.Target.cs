@@ -3,9 +3,9 @@
 using UnrealBuildTool;
 using System.Collections.Generic;
 
-public class BeatEmUpEditorTarget : TargetRules
+public class PunchEditorTarget : TargetRules
 {
-	public BeatEmUpEditorTarget(TargetInfo Target)
+	public PunchEditorTarget(TargetInfo Target)
 	{
 		Type = TargetType.Editor;
 	}
@@ -20,6 +20,6 @@ public class BeatEmUpEditorTarget : TargetRules
 		ref List<string> OutExtraModuleNames
 		)
 	{
-		OutExtraModuleNames.AddRange( new string[] { "BeatEmUp", "BeatEmUpEditor", "GraphEditor" } );
+		OutExtraModuleNames.AddRange( new string[] { "PunchGame", "PunchEditor", "GraphEditor" } );
 	}
 }

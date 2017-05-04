@@ -5,7 +5,7 @@
 	"Description": "",
 	"Modules": [
 		{
-			"Name": "BeatEmUp",
+			"Name": "PunchGame",
 			"Type": "Runtime",
 			"LoadingPhase": "Default",
 			"AdditionalDependencies": [
@@ -13,7 +13,7 @@
 			]
 		},
 		{
-			"Name": "BeatEmUpEditor",
+			"Name": "PunchEditor",
 			"Type": "Editor",
 			"LoadingPhase": "PostEngineInit"
 		}

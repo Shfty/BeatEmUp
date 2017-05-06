@@ -97,10 +97,7 @@ public:
 	bool IsInitialized() const;
 
 public:
-	UPROPERTY()
 	static FVector2D ShearFactor;
-
-	UPROPERTY()
 	static FVector2D ShearOffset;
 
 private:

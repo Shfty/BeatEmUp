@@ -14,10 +14,13 @@ class PUNCHGAME_API UBeatEmUpStatics : public UBlueprintFunctionLibrary
 	GENERATED_BODY()
 	
 public:
-	UFUNCTION(BlueprintCallable, Category = "Utility")
+	UFUNCTION(BlueprintPure, Category = "Utility")
 	static TArray<FString> GetAllMapNamesInFolder(FString Folder, bool Recursive = false);
 
-	UFUNCTION(BlueprintCallable, Category = "Utility")
+	UFUNCTION(BlueprintPure, Category = "Utility")
 	static TArray<FString> GetAllMapNames();
+
+	UFUNCTION(BlueprintPure, Category = "Utility")
+	static bool ValidateIPAddress(FString IPAddress);
 	
 };

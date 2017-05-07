@@ -9,14 +9,12 @@ public class PunchGame : ModuleRules
 		PublicIncludePaths.AddRange(
 			new string[] {
                 "PunchGame/Public",
-                "PunchGame/Public/AssetTypeActions"
             }
 		);
 		
 		PrivateIncludePaths.AddRange(
 			new string[] {
                 "PunchGame/Private",
-                "PunchGame/Private/AssetTypeActions"
             }
 		);
 		
@@ -26,10 +24,7 @@ public class PunchGame : ModuleRules
 				"CoreUObject",
 				"Engine",
 				"InputCore",
-                "Paper2D",
-                "Slate",
-                "SlateCore",
-                "UMG"
+                "Sockets"
             }
 		);
 

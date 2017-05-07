@@ -2,6 +2,9 @@
 
 #include "PunchGame.h"
 #include "BeatEmUpStatics.h"
+#include "IPAddress.h"
+
+#include "SocketSubsystem.h"
 
 TArray<FString> UBeatEmUpStatics::GetAllMapNamesInFolder(FString Folder, bool Recursive)
 {
@@ -30,4 +33,19 @@ TArray<FString> UBeatEmUpStatics::GetAllMapNamesInFolder(FString Folder, bool Re
 TArray<FString> UBeatEmUpStatics::GetAllMapNames()
 {
 	return GetAllMapNamesInFolder("");
+}
+
+bool UBeatEmUpStatics::ValidateIPAddress(FString IPAddress)
+{
+	if(IPAddress.IsEmpty())
+	{
+		return false;
+	}
+
+	bool IsValid;
+
+	TSharedRef<FInternetAddr> Addr = ISocketSubsystem::Get(PLATFORM_SOCKETSUBSYSTEM)->CreateInternetAddr();
+	Addr->SetIp(*IPAddress, IsValid);
+
+	return IsValid;
 }

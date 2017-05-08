@@ -56,6 +56,9 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Utility")
 	static void ClearInputActionMappings();
 
+	UFUNCTION(BlueprintCallable, Category = "Utility")
+	static void ApplyInputMappings(APlayerController* PlayerController);
+
 	UFUNCTION(BlueprintPure, Category = "Utility")
 	static bool ValidateIPAddress(FString IPAddress);
 	

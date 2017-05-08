@@ -228,6 +228,11 @@ void UBeatEmUpStatics::ClearInputActionMappings()
 	}
 }
 
+void UBeatEmUpStatics::ApplyInputMappings(APlayerController* PlayerController)
+{
+	PlayerController->PlayerInput->ForceRebuildingKeyMaps();
+}
+
 bool UBeatEmUpStatics::ValidateIPAddress(FString IPAddress)
 {
 	if(IPAddress.IsEmpty())

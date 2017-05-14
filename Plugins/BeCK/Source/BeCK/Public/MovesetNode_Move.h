@@ -11,6 +11,8 @@ class BECK_API UMovesetNode_Move : public UMovesetNode_Base
 	GENERATED_BODY()
 
 public:
+	UMovesetNode_Move(const FObjectInitializer& ObjectInitializer);
+
 	virtual UMovesetNode_Base* GetUpdateNode() const { return UpdateNode; };
 	virtual UMovesetNode_Base* GetFinishNode() const { return FinishNode; };
 	virtual TArray<UMovesetNode_Base*> GetLinkNodes() const { return LinkNodes; };
@@ -31,6 +33,9 @@ public:
 public:
 	UPROPERTY(EditAnywhere, Instanced, Category = MoveNode)
 	UMove* Move;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly)
+	uint32 bShowInMovelist : 1;
 
 	UPROPERTY()
 	UMovesetNode_Base* UpdateNode;

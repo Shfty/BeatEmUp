@@ -8,6 +8,13 @@
 
 #if WITH_EDITOR
 
+UMovesetNode_Move::UMovesetNode_Move(const FObjectInitializer& ObjectInitializer) :
+	Super(ObjectInitializer),
+	bShowInMovelist(true)
+{
+
+}
+
 void UMovesetNode_Move::SetUpdateNode(UMovesetNode_Base* InUpdateNode)
 {
 	UpdateNode = InUpdateNode;

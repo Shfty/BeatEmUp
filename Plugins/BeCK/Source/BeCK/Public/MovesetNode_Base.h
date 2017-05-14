@@ -71,9 +71,6 @@ public:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
 	FName NodeName;
 
-	UPROPERTY(EditAnywhere, BlueprintReadOnly)
-	uint32 bShowInMovelist : 1;
-
 	UPROPERTY()
 	TArray<UMovesetNode_Base*> ChildNodes;
 

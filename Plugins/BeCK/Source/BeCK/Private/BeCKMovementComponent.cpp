@@ -191,6 +191,7 @@ bool UBeCKMovementComponent::HandleDeflection(FHitResult& Hit, const FVector& Ol
 	if(Normal.Z >= LandDotTolerance)
 	{
 		Velocity.Z = 0.0f;
+		bIsGrounded = true;
 	}
 
 	// if velocity still into wall (after HandleBlockingHit() had a chance to adjust), slide along wall
@@ -250,31 +251,34 @@ bool UBeCKMovementComponent::HandleSliding(FHitResult& Hit, float& SubTickTimeRe
 
 void UBeCKMovementComponent::UpdateGrounded()
 {
-	FHitResult GroundTraceResult = FHitResult();
+	if(bIsGrounded && Velocity.Z > 1.0f)
+	{
+		FHitResult GroundTraceResult = FHitResult();
 
-	FCollisionObjectQueryParams ObjectQueryParams;
-	ObjectQueryParams.AddObjectTypesToQuery(ECC_WorldStatic);
-	ObjectQueryParams.AddObjectTypesToQuery(ECC_WorldDynamic);
-	ObjectQueryParams.AddObjectTypesToQuery(ECC_PhysicsBody);
+		FCollisionObjectQueryParams ObjectQueryParams;
+		ObjectQueryParams.AddObjectTypesToQuery(ECC_WorldStatic);
+		ObjectQueryParams.AddObjectTypesToQuery(ECC_WorldDynamic);
+		ObjectQueryParams.AddObjectTypesToQuery(ECC_PhysicsBody);
 
-	FCollisionQueryParams TraceParams = FCollisionQueryParams(FName(TEXT("BeCKMovement Ground Check")), true, this->GetOwner());
-	TraceParams.bTraceComplex = true;
-	TraceParams.bReturnPhysicalMaterial = false;
+		FCollisionQueryParams TraceParams = FCollisionQueryParams(FName(TEXT("BeCKMovement Ground Check")), true, this->GetOwner());
+		TraceParams.bTraceComplex = true;
+		TraceParams.bReturnPhysicalMaterial = false;
 
-	bIsGrounded = GetWorld()->SweepSingleByObjectType(
-		GroundTraceResult,
-		UpdatedComponent->ComponentToWorld.GetLocation(),
-		UpdatedComponent->ComponentToWorld.GetLocation() - FVector(0.0f, 0.0f, (ComponentHalfHeight - ComponentRadius) + 0.1f),
-		FQuat::Identity,
-		ObjectQueryParams,
-		FCollisionShape::MakeSphere(ComponentRadius),
-		TraceParams
-	);
+		bIsGrounded = GetWorld()->SweepSingleByObjectType(
+			GroundTraceResult,
+			UpdatedComponent->ComponentToWorld.GetLocation(),
+			UpdatedComponent->ComponentToWorld.GetLocation() - FVector(0.0f, 0.0f, (ComponentHalfHeight - ComponentRadius) + 0.1f),
+			FQuat::Identity,
+			ObjectQueryParams,
+			FCollisionShape::MakeSphere(ComponentRadius),
+			TraceParams
+		);
+	}
 }
 
 bool UBeCKMovementComponent::IsMovingOnGround() const
 {
-	return bIsGrounded && Velocity.Z <= 0.0f;
+	return bIsGrounded;
 }
 
 float UBeCKMovementComponent::GetGravityZ() const

@@ -5,7 +5,8 @@
 #include "Move.h"
 
 UMovesetNode_Base::UMovesetNode_Base(const FObjectInitializer& ObjectInitializer)
-	: Super(ObjectInitializer)
+	: Super(ObjectInitializer),
+	bShowInMovelist(true)
 {
 }
 

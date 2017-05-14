@@ -274,7 +274,7 @@ void UBeCKMovementComponent::UpdateGrounded()
 
 bool UBeCKMovementComponent::IsMovingOnGround() const
 {
-	return bIsGrounded;
+	return bIsGrounded && Velocity.Z <= 0.0f;
 }
 
 float UBeCKMovementComponent::GetGravityZ() const

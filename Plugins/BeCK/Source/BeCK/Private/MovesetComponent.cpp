@@ -239,11 +239,6 @@ bool UMovesetComponent::EvaluateNode(int TreeDepth, UMovesetNode_Base* Node)
 		UMovesetNode_Input* InputNode = Cast<UMovesetNode_Input>(Node);
 		if(InputNode != nullptr)
 		{
-			if(InputNode->AutoReset)
-			{
-				InputState.CurrentState[InputNode->InputValue] = false;
-			}
-
 			UMovesetNode_Base* PressedNode = InputNode->GetPressedNode();
 			if(PressedNode != nullptr)
 			{

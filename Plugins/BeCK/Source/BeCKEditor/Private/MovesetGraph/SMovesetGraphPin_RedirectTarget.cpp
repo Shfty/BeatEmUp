@@ -9,6 +9,7 @@
 #include "MovesetGraphNode_RedirectTarget.h"
 #include "MovesetNode_RedirectTarget.h"
 #include "MovesetGraph.h"
+#include "Moveset.h"
 
 void SMovesetGraphPin_RedirectTarget::Construct(const FArguments& InArgs, UEdGraphPin* InGraphPinObj)
 {
@@ -88,12 +89,9 @@ void SMovesetGraphPin_RedirectTarget::ComboBoxSelectionChanged(TSharedPtr<int32>
 
 		if(OwningNode != nullptr)
 		{
-			UMovesetNode_RedirectTarget* RedirectTargetNode = Cast<UMovesetNode_RedirectTarget>(OwningNode->MovesetNode);
-
-			if(RedirectTargetNode != nullptr)
-			{
-				// Set RedirectTargetNode reference to selected value
-			}
+			UMoveset* Moveset = CastChecked<UMovesetGraph>(OwningNode->GetGraph())->GetMoveset();
+			Moveset->CompileMoveNodesFromGraphNodes();
+			Moveset->MarkPackageDirty();
 		}
 	}
 }

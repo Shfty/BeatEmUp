@@ -156,9 +156,9 @@ void UMovesetGraphNode_Base::AddInputPin()
 	Modify();
 	CreateInputPin();
 
-	UMoveset* SoundCue = CastChecked<UMovesetGraph>(GetGraph())->GetMoveset();
-	SoundCue->CompileMoveNodesFromGraphNodes();
-	SoundCue->MarkPackageDirty();
+	UMoveset* Moveset = CastChecked<UMovesetGraph>(GetGraph())->GetMoveset();
+	Moveset->CompileMoveNodesFromGraphNodes();
+	Moveset->MarkPackageDirty();
 
 	// Refresh the current graph, so the pins can be updated
 	GetGraph()->NotifyGraphChanged();
@@ -464,6 +464,10 @@ FText UMovesetGraphNode_Base::GetNodeTitle(ENodeTitleType::Type TitleType) const
 void UMovesetGraphNode_Base::OnRenameNode(const FString& NewName)
 {
 	CustomTitle = *NewName;
+
+	UMoveset* Moveset = CastChecked<UMovesetGraph>(GetGraph())->GetMoveset();
+	Moveset->CompileMoveNodesFromGraphNodes();
+	Moveset->MarkPackageDirty();
 }
 
 void UMovesetGraphNode_Base::PostDuplicate(bool bDuplicateForPIE)

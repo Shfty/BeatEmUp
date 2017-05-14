@@ -8,6 +8,8 @@
 #include "ScopedTransaction.h"
 #include "MovesetGraphNode_Base.h"
 #include "MovesetNode_Input.h"
+#include "Moveset.h"
+#include "MovesetGraph.h"
 
 void SMovesetGraphPin_Input::Construct(const FArguments& InArgs, UEdGraphPin* InGraphPinObj)
 {
@@ -91,7 +93,10 @@ void SMovesetGraphPin_Input::ComboBoxSelectionChanged(TSharedPtr<int32> NewSelec
 			if(InputNode != nullptr)
 			{
 				InputNode->InputValue = *NewSelection;
-				UE_LOG(LogTemp, Log, TEXT("%d"), InputNode->InputValue);
+
+				UMoveset* Moveset = CastChecked<UMovesetGraph>(OwningNode->GetGraph())->GetMoveset();
+				Moveset->CompileMoveNodesFromGraphNodes();
+				Moveset->MarkPackageDirty();
 			}
 		}
 	}

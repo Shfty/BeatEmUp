@@ -45,8 +45,5 @@ public:
 
 	UPROPERTY()
 	UMovesetNode_Base* FalseNode;
-
-	UPROPERTY(EditAnywhere, Category = "Input")
-	uint32 AutoReset : 1;
 };
 

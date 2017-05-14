@@ -46,6 +46,10 @@
 		{
 			"Name": "BeCK",
 			"Enabled": true
+		},
+		{
+			"Name": "UMGArranger",
+			"Enabled": true
 		}
 	]
 }

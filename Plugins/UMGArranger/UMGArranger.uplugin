@@ -1,0 +1,17 @@
+{
+	"FileVersion" : 3,
+	"Version" : 1,
+	"VersionName" : "1.0",
+	"FriendlyName" : "UMG Arranger",
+	"Description" : "Arranger framework for UMG, enables powerful programmatic arrangement and animation of a set of widgets.",
+	"Category" : "UMG",
+	"CreatedBy" : "Josh Palmer",
+	"CreatedByURL" : "",
+	"DocsURL" : "",
+	"MarketplaceURL" : "",
+	"SupportURL" : "",
+	"EnabledByDefault" : false,
+	"CanContainContent" : true,
+	"IsBetaVersion" : false,
+	"Installed" : false
+}

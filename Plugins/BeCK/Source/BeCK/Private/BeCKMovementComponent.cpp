@@ -193,22 +193,15 @@ bool UBeCKMovementComponent::HandleDeflection(FHitResult& Hit, const FVector& Ol
 		Velocity.Z = 0.0f;
 	}
 
-	// if velocity still into wall (after HandleBlockingHit() had a chance to adjust), slide along wall
-	const float SlideDotTolerance = 0.01f;
-	bIsSliding = FVector::Coincident(PreviousHitNormal, Normal) || (Velocity.GetSafeNormal() | Normal) <= SlideDotTolerance;
+	//adjust to move along new wall
+	Velocity = ComputeSlideVector(Velocity, 1.f, Normal, Hit);
 
-	if(bIsSliding)
+	// Velocity is now parallel to the impact surface.
+	if(SubTickTimeRemaining > KINDA_SMALL_NUMBER)
 	{
-		//adjust to move along new wall
-		Velocity = ComputeSlideVector(Velocity, 1.f, Normal, Hit);
-
-		// Velocity is now parallel to the impact surface.
-		if(SubTickTimeRemaining > KINDA_SMALL_NUMBER)
+		if(!HandleSliding(Hit, SubTickTimeRemaining))
 		{
-			if(!HandleSliding(Hit, SubTickTimeRemaining))
-			{
-				return false;
-			}
+			return false;
 		}
 	}
 
@@ -225,24 +218,7 @@ bool UBeCKMovementComponent::HandleSliding(FHitResult& Hit, float& SubTickTimeRe
 	SafeMoveUpdatedComponent(Velocity * SubTickTimeRemaining, UpdatedComponent->GetComponentQuat(), true, Hit);
 
 	// Find velocity after elapsed time
-	const FVector PostTickVelocity = ComputeVelocity(Velocity, SubTickTimeRemaining);
-
-	// If pointing back into surface, apply friction and acceleration.
-	const FVector Force = (PostTickVelocity - Velocity);
-	const float ForceDotN = (Force | OldHitNormal);
-	if(ForceDotN < 0.f)
-	{
-		const FVector ProjectedForce = FVector::VectorPlaneProject(Force, OldHitNormal);
-		const FVector NewVelocity = Velocity + ProjectedForce;
-
-		const FVector FrictionForce = -NewVelocity.GetSafeNormal() * FMath::Min(-ForceDotN * Friction, NewVelocity.Size());
-		Velocity = ConstrainDirectionToPlane(NewVelocity + FrictionForce);
-	}
-	else
-	{
-		Velocity = PostTickVelocity;
-	}
-
+	Velocity = ComputeVelocity(Velocity, SubTickTimeRemaining);
 	SubTickTimeRemaining = 0.f;
 
 	return true;
@@ -294,6 +270,7 @@ void UBeCKMovementComponent::RequestPathMove(const FVector& MoveInput)
 {
 	FVector Move = MoveInput;
 	Move.Z = 0.0f;
+	Move = Move.GetClampedToMaxSize(1.0f);
 	PawnOwner->Internal_AddMovementInput(Move);
 }
 

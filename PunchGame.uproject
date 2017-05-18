@@ -50,6 +50,10 @@
 		{
 			"Name": "UMGArranger",
 			"Enabled": true
+		},
+		{
+			"Name": "UMGFocusMouse",
+			"Enabled": true
 		}
 	]
 }

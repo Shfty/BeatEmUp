@@ -1,0 +1,5 @@
+Design Bible
+
+-Take advantage of the camera skew system to create interesting optical illusions in your level design.
+-Don't combine horizontal camera skew with yaw unless you have a very good reason. The effect is sickening.
+-Camera skew transitions should be reasonably short and sharp, else you risk disorienting the player.

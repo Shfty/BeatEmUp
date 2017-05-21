@@ -57,7 +57,7 @@ FMatrix UCustomProjectionFunctionLibrary::MakeOrthoMatrix(float Width, float Hei
 {
 	if(ReverseZ)
 	{
-		return FReversedZOrthoMatrix(Width, Height, 1.0f / FarPlane, NearPlane);
+		return FReversedZOrthoMatrix(Width, Height, 1.0f / FarPlane, -NearPlane);
 	}
 
 	return FOrthoMatrix(Width, Height, 1.0f / FarPlane, NearPlane);

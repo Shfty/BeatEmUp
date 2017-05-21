@@ -36,14 +36,6 @@
 			"Enabled": false
 		},
 		{
-			"Name": "OrthoHMD",
-			"Enabled": true
-		},
-		{
-			"Name": "DLCTest",
-			"Enabled": true
-		},
-		{
 			"Name": "BeCK",
 			"Enabled": true
 		},
@@ -53,6 +45,10 @@
 		},
 		{
 			"Name": "UMGFocusMouse",
+			"Enabled": true
+		},
+		{
+			"Name": "CustomProjection",
 			"Enabled": true
 		}
 	]

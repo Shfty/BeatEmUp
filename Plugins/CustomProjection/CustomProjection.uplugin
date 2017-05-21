@@ -1,0 +1,25 @@
+{
+	"FileVersion" : 3,
+	"Version" : 1,
+	"VersionName" : "1.0",
+	"FriendlyName" : "Custom Projection",
+	"Description" : "A plugin to expose Unreal 4's projection matrix to blueprints via an artificial HMD.",
+	"Category" : "Rendering",
+	"CreatedBy" : "Josh Palmer",
+	"CreatedByURL" : "",
+	"DocsURL" : "",
+	"MarketplaceURL" : "",
+	"SupportURL" : "",
+	"EnabledByDefault" : false,
+	"CanContainContent" : false,
+	"IsBetaVersion" : false,
+	"Installed" : false,
+	"Modules" :
+	[
+		{
+			"Name" : "CustomProjection",
+			"Type" : "Runtime",
+			"LoadingPhase" : "Default"
+		}
+	]
+}
